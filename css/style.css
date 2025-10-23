@@ -1,21 +1,21 @@
 /* ----------------------------------------------------
-  ESTRUTURA MODULAR CSS - IMPORTAÇÕES
-  Este arquivo importa todos os módulos.
+  ESTRUTURA MODULAR CSS - IMPORTAÇÕES (AJUSTADO PARA A SUA ESTRUTURA)
+  Este código funciona para a estrutura que você criou.
 ---------------------------------------------------- */
 
-/* 1. BASE: Design System, Reset e Tipografia */
+/* 1. BASE: Arquivos que estão diretamente em css/base/ */
 @import url('./base/_reset.css');
 @import url('./base/_design-system.css');
 @import url('./base/_tipografia.css');
+@import url('./base/_grid.css'); /* Se o grid foi parar na pasta base, importamos daqui */
 
 
-/* 2. LAYOUT: Estrutura Geral, Header, Footer e Grid */
-@import url('./layout/_grid.css');
-@import url('./layout/_header.css'); 
-@import url('./layout/_footer.css');
+/* 2. LAYOUT: Arquivos que estão em css/base/layout/ */
+@import url('./base/layout/_header.css'); 
+@import url('./base/layout/_footer.css');
 
 
-/* 3. COMPONENTES: Cards, Botões e Formulários */
-@import url('./components/_buttons.css');
-@import url('./components/_forms.css');
-@import url('./components/_cards.css');
+/* 3. COMPONENTES: Arquivos que estão em css/base/components/ */
+@import url('./base/components/_buttons.css');
+@import url('./base/components/_forms.css');
+@import url('./base/components/_cards.css');

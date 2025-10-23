@@ -1,28 +1,38 @@
 /*
   =============================================
-  REQUISITO: SISTEMA DE CARDS RESPONSIVOS
+  SISTEMA DE CARDS RESPONSIVOS
   =============================================
 */
 
 .card {
+    /* Cor de fundo e sombra */
     background-color: var(--cor-neutra-clara);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     padding: var(--espaco-3x);
-    display: flex; /* Uso de Flexbox para alinhamento interno */
+    
+    /* Requisito: Grid Flexível */
+    display: flex; 
     flex-direction: column;
-    height: 100%; /* Garante que todos os cards na mesma row tenham a mesma altura */
+    height: 100%; 
     transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Efeito sutil ao passar o mouse */
+    transform: translateY(-5px); 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* CÓDIGO CRÍTICO PARA DEIXAR AS IMAGENS PROPORCIONAIS */
 .card img {
+    /* Garante que a imagem não ultrapasse a largura do card */
+    max-width: 100%; 
+    /* Define uma altura máxima de 200px para todas as imagens de projeto */
+    height: 200px; 
+    /* MANTÉM A PROPORÇÃO: Recorta a imagem para preencher o espaço sem distorcer */
+    object-fit: cover; 
+    
     margin-bottom: var(--espaco-2x);
     border-radius: 4px;
-    object-fit: cover;
-    height: 200px; /* Altura fixa para as imagens dentro dos cards */
+    display: block; 
 }

@@ -1,0 +1,33 @@
+/*
+  =============================================
+  REQUISITO: NAVEGAÇÃO SOFISTICADA E FLEXBOX
+  =============================================
+*/
+header {
+    background-color: var(--cor-neutra-clara);
+    padding: var(--espaco-2x) 0;
+    border-bottom: 1px solid var(--cor-neutra-fundo);
+}
+
+header nav {
+    display: flex; /* Uso de Flexbox para alinhamento */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CÓDIGO CRÍTICO PARA DIMENSIONAR A LOGO (150px) */
+header .logo {
+    width: 150px; 
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    gap: var(--espaco-3x);
+    margin: 0;
+}
+
+header nav ul li a {
+    font-weight: 600;
+    padding: var(--espaco-1x) 0;
+}
