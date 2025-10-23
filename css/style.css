@@ -11,7 +11,7 @@
 
 /* 2. LAYOUT: Estrutura Geral, Header, Footer e Grid */
 @import url('./layout/_grid.css');
-@import url('./layout/_header.css');
+@import url('./layout/_header.css'); 
 @import url('./layout/_footer.css');
 
 
@@ -19,6 +19,3 @@
 @import url('./components/_buttons.css');
 @import url('./components/_forms.css');
 @import url('./components/_cards.css');
-/* Componentes adicionais: alerts, tags, etc. */
-/* @import url('./components/_alerts.css'); */
-/* @import url('./components/_tags.css'); */
