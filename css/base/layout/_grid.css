@@ -1,0 +1,63 @@
+/*
+  =============================================
+  REQUISITO: LAYOUT COM GRID E FLEXBOX (RESPONSIVO)
+  =============================================
+*/
+
+/* --- Estrutura Principal de Conteúdo --- */
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--espaco-4x) var(--espaco-2x);
+}
+
+/* --- REQUISITO: Sistema de Grid Customizado (12 colunas) --- */
+.row {
+    display: grid;
+    /* Padrão Mobile: 1 coluna */
+    grid-template-columns: 1fr; 
+    gap: var(--espaco-3x);
+    margin-bottom: var(--espaco-4x);
+}
+
+/* Classes para definir o tamanho da coluna (ex: <div class="col-desktop-4">) */
+/* Aqui você definiria as classes col-1 a col-12, mas vamos usar apenas a principal por enquanto */
+.col-12 { grid-column: span 12; }
+.col-6 { grid-column: span 6; }
+.col-4 { grid-column: span 4; }
+
+/* --- REQUISITO: Breakpoints Responsivos (Mobile-First) --- */
+
+/* BREAKPOINT 1: Tablets Pequenos (600px) */
+@media screen and (min-width: 600px) {
+    .row {
+        /* Layout em 2 colunas para o grid principal em tablets */
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* BREAKPOINT 2: Tablets/Telões (768px) */
+@media screen and (min-width: 768px) {
+    /* Mantém o grid de 2 colunas, mas ajusta a proporção do container */
+    .container {
+        padding: var(--espaco-6x) var(--espaco-3x);
+    }
+}
+
+/* BREAKPOINT 3: Desktops (992px) - Ativamos o Grid de 12 Colunas */
+@media screen and (min-width: 992px) {
+    .row {
+        grid-template-columns: repeat(12, 1fr); /* Ativa o Grid de 12 colunas! */
+    }
+}
+
+/* BREAKPOINT 4: Desktops Grandes (1200px) */
+@media screen and (min-width: 1200px) {
+    /* Ajustes finos */
+}
+
+/* BREAKPOINT 5: Telas Ultra Largas (1400px) */
+@media screen and (min-width: 1400px) {
+    /* Ex: Layout com margem maior */
+}

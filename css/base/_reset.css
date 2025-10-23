@@ -1,0 +1,18 @@
+/* RESET BÁSICO */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove estilos padrão de lista */
+ul {
+    list-style: none;
+}
+
+/* Garante que imagens são responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

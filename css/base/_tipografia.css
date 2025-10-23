@@ -1,0 +1,12 @@
+/* ESTILOS DE TIPOGRAFIA ADICIONAIS */
+
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--cor-primaria-escuro); /* Use uma variável mais escura para o hover */
+    text-decoration: underline;
+}

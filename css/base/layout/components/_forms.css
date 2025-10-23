@@ -1,0 +1,64 @@
+/*
+  =============================================
+  REQUISITO: FORMULÁRIOS ESTILIZADOS E VALIDAÇÃO VISUAL
+  =============================================
+*/
+
+form {
+    background-color: var(--cor-neutra-clara);
+    padding: var(--espaco-4x);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+fieldset {
+    border: 1px solid var(--cor-neutra-fundo);
+    padding: var(--espaco-3x);
+    margin-bottom: var(--espaco-4x);
+    border-radius: 4px;
+}
+
+legend {
+    font-size: var(--fonte-h3);
+    padding: 0 var(--espaco-2x);
+    color: var(--cor-primaria);
+}
+
+label {
+    display: block;
+    margin-top: var(--espaco-2x);
+    margin-bottom: var(--espaco-1x);
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: var(--espaco-2x);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: var(--fonte-p);
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: var(--cor-primaria);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(44, 123, 229, 0.2);
+}
+
+/* REQUISITO: VALIDAÇÃO VISUAL */
+
+/* Borda Verde quando o campo está válido */
+input:valid {
+    border-color: var(--cor-secundaria);
+}
+
+/* Borda Vermelha quando o campo está inválido E o usuário já interagiu com ele */
+input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: var(--cor-erro);
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.2);
+}

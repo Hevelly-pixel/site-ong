@@ -1,0 +1,28 @@
+/*
+  =============================================
+  REQUISITO: SISTEMA DE CARDS RESPONSIVOS
+  =============================================
+*/
+
+.card {
+    background-color: var(--cor-neutra-clara);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: var(--espaco-3x);
+    display: flex; /* Uso de Flexbox para alinhamento interno */
+    flex-direction: column;
+    height: 100%; /* Garante que todos os cards na mesma row tenham a mesma altura */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito sutil ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    margin-bottom: var(--espaco-2x);
+    border-radius: 4px;
+    object-fit: cover;
+    height: 200px; /* Altura fixa para as imagens dentro dos cards */
+}

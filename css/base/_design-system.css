@@ -1,0 +1,54 @@
+/*
+  =============================================
+  REQUISITO: DESIGN SYSTEM, CORES, TIPOGRAFIA E ESPAÇAMENTO
+  =============================================
+*/
+
+:root {
+    /* --- 1. PALETA DE CORES (Mínimo 8 cores) --- */
+    --cor-primaria: #2c7be5;          /* Azul (Marca) */
+    --cor-secundaria: #00bf8a;        /* Verde (Sucesso, Doação) */
+    --cor-alerta: #fa3857;            /* Vermelho (Erro, Atenção) */
+    --cor-aviso: #ffc107;             /* Amarelo (Aviso) */
+    --cor-neutra-fundo: #f0f3f6;      /* Cinza Claro para BG */
+    --cor-neutra-clara: #ffffff;      /* Branco */
+    --cor-neutra-escura: #333d52;     /* Texto Principal Escuro */
+    --cor-texto-secundario: #6e84a3;  /* Texto Secundário */
+
+
+    /* --- 2. TIPOGRAFIA HIERÁRQUICA (Mínimo 5 tamanhos de fonte) --- */
+    --fonte-familia: 'Helvetica Neue', Arial, sans-serif;
+
+    /* Base 16px */
+    --fonte-h1: 3rem;           /* 48px */
+    --fonte-h2: 2.25rem;        /* 36px */
+    --fonte-h3: 1.5rem;         /* 24px */
+    --fonte-p: 1rem;            /* 16px (Base) */
+    --fonte-small: 0.875rem;    /* 14px */
+
+
+    /* --- 3. ESPAÇAMENTO MODULAR (Base 8px) --- */
+    --espaco-1x: 8px;     /* 8px */
+    --espaco-2x: 16px;    /* 16px */
+    --espaco-3x: 24px;    /* 24px */
+    --espaco-4x: 32px;    /* 32px */
+    --espaco-6x: 48px;    /* 48px */
+    --espaco-8x: 64px;    /* 64px */
+}
+
+/* Aplicação Global */
+body {
+    font-family: var(--fonte-familia);
+    background-color: var(--cor-neutra-fundo);
+    color: var(--cor-neutra-escura);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* REQUISITO: TIPOGRAFIA */
+h1 { font-size: var(--fonte-h1); margin-bottom: var(--espaco-4x); }
+h2 { font-size: var(--fonte-h2); margin-bottom: var(--espaco-3x); }
+h3 { font-size: var(--fonte-h3); margin-bottom: var(--espaco-2x); }
+p { font-size: var(--fonte-p); margin-bottom: var(--espaco-2x); }
+small { font-size: var(--fonte-small); }

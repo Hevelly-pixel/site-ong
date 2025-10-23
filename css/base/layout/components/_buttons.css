@@ -1,0 +1,52 @@
+/*
+  =============================================
+  REQUISITO: BOTÕES COM ESTADOS VISUAIS
+  =============================================
+*/
+
+.btn {
+    display: inline-block;
+    padding: var(--espaco-2x) var(--espaco-3x);
+    font-size: var(--fonte-p);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Estilo Primário (Ação principal) */
+.btn-primary {
+    background-color: var(--cor-primaria);
+    color: var(--cor-neutra-clara);
+}
+
+/* Estilo Secundário (Doação/Sucesso) */
+.btn-secondary {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-neutra-clara);
+}
+
+/* REQUISITO: Estados Visuais (hover, focus, active, disabled) */
+
+/* HOVER (Passar o mouse) */
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--cor-neutra-escura); /* Escurece para dar feedback */
+}
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: #008f65;
+}
+
+/* ACTIVE (Clicado) */
+.btn:active {
+    transform: scale(0.98); /* Pequena animação de clique */
+}
+
+/* DISABLED (Desativado) */
+.btn:disabled {
+    background-color: var(--cor-texto-secundario);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
