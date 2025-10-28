@@ -74,3 +74,17 @@ main {
     max-width: 1200px; 
     margin: 0 auto;
 }
+/*
+  =============================================
+  WCAG 2.1: FOCO VISÍVEL PARA NAVEGAÇÃO POR TECLADO
+  =============================================
+*/
+a:focus,
+button:focus,
+input:focus:required, /* Inclui campos de formulário */
+select:focus,
+textarea:focus {
+    /* Define um anel de foco de 2px sólido, offset para não sobrepor a borda */
+    outline: 2px solid #00c0f3; /* Cor azul turquesa, deve ter contraste */
+    outline-offset: 3px; 
+}
