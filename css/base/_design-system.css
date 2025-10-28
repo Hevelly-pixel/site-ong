@@ -50,3 +50,27 @@ h2 { font-size: var(--fonte-h2); margin-bottom: var(--espaco-3x); }
 h3 { font-size: var(--fonte-h3); margin-bottom: var(--espaco-2x); }
 p { font-size: var(--fonte-p); margin-bottom: var(--espaco-2x); }
 small { font-size: var(--fonte-small); }
+/*
+  =============================================
+  CORREÇÃO DE LAYOUT E ESPAÇAMENTO GLOBAL
+  =============================================
+*/
+main {
+    padding: var(--espaco-6x) 0; /* Adiciona espaçamento grande acima e abaixo do conteúdo principal */
+}
+/*
+  =============================================
+  CORREÇÃO DE LAYOUT E ESPAÇAMENTO GLOBAL
+  =============================================
+*/
+main {
+    /* Usa a variável de espaçamento modular (Ex: 48px), que é a prática correta da Etapa 2 */
+    padding: var(--espaco-6x) 0; 
+}
+
+/* Garante que o container tenha margem nas laterais */
+.container {
+    width: 90%;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
