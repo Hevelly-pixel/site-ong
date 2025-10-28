@@ -1,0 +1,38 @@
+/*
+  =============================================
+  COMPONENTES - BOTÕES
+  =============================================
+*/
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: var(--espaco-2x) var(--espaco-3x);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+/* Botão Principal (Azul - Usado para o botão de Doação) */
+.btn-primary {
+    background-color: var(--cor-primaria);
+    color: var(--cor-neutra-clara);
+}
+
+.btn-primary:hover {
+    background-color: var(--cor-primaria-escura);
+}
+
+/* Botão Secundário (Verde Aqua - Usado para o botão do Menu, se for o caso) */
+.btn-secondary {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-neutra-clara); /* Texto branco, para contraste */
+}
+
+.btn-secondary:hover {
+    background-color: var(--cor-secundaria-escura);
+}

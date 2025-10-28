@@ -1,39 +1,37 @@
 /*
   =============================================
-  REQUISITO: DESIGN SYSTEM, CORES, TIPOGRAFIA E ESPAÇAMENTO
+  BASE - DESIGN SYSTEM (VARIÁVEIS)
   =============================================
 */
 
 :root {
-    /* --- 1. PALETA DE CORES (Mínimo 8 cores) --- */
-    --cor-primaria: #2c7be5;          /* Azul (Marca) */
-    --cor-secundaria: #00bf8a;        /* Verde (Sucesso, Doação) */
-    --cor-alerta: #fa3857;            /* Vermelho (Erro, Atenção) */
-    --cor-aviso: #ffc107;             /* Amarelo (Aviso) */
-    --cor-neutra-fundo: #f0f3f6;      /* Cinza Claro para BG */
-    --cor-neutra-clara: #ffffff;      /* Branco */
-    --cor-neutra-escura: #333d52;     /* Texto Principal Escuro */
-    --cor-texto-secundario: #6e84a3;  /* Texto Secundário */
+    /* CORES */
+    --cor-primaria: #007bff; /* Azul ONG */
+    --cor-primaria-escura: #0056b3;
+    
+    /* COR SECUNDÁRIA NOVA: VERDE AQUA (Para o botão de CTA) */
+    --cor-secundaria: #17a2b8; 
+    --cor-secundaria-escura: #0f6674;
 
+    --cor-neutra-escura: #333; /* Texto principal e footer */
+    --cor-neutra-clara: #fff;
+    --cor-neutra-fundo: #f4f4f4; /* Fundo leve */
 
-    /* --- 2. TIPOGRAFIA HIERÁRQUICA (Mínimo 5 tamanhos de fonte) --- */
-    --fonte-familia: 'Helvetica Neue', Arial, sans-serif;
+    /* TIPOGRAFIA */
+    --fonte-familia: 'Arial', sans-serif;
+    --fonte-h1: 2.5rem; 
+    --fonte-h2: 2rem;   
+    --fonte-h3: 1.5rem;  
+    --fonte-p: 1rem;    
+    --fonte-small: 0.875rem; 
 
-    /* Base 16px */
-    --fonte-h1: 3rem;           /* 48px */
-    --fonte-h2: 2.25rem;        /* 36px */
-    --fonte-h3: 1.5rem;         /* 24px */
-    --fonte-p: 1rem;            /* 16px (Base) */
-    --fonte-small: 0.875rem;    /* 14px */
-
-
-    /* --- 3. ESPAÇAMENTO MODULAR (Base 8px) --- */
-    --espaco-1x: 8px;     /* 8px */
-    --espaco-2x: 16px;    /* 16px */
-    --espaco-3x: 24px;    /* 24px */
-    --espaco-4x: 32px;    /* 32px */
-    --espaco-6x: 48px;    /* 48px */
-    --espaco-8x: 64px;    /* 64px */
+    /* ESPAÇAMENTO MODULAR (Base 8px) */
+    --espaco-1x: 8px; 
+    --espaco-2x: 16px; 
+    --espaco-3x: 24px; 
+    --espaco-4x: 32px; 
+    --espaco-6x: 48px; 
+    --espaco-8x: 64px; 
 }
 
 /* Aplicação Global */

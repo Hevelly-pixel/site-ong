@@ -1,0 +1,18 @@
+/*
+  =============================================
+  LAYOUT - RODAPÉ (FOOTER)
+  =============================================
+*/
+
+footer {
+    background-color: var(--cor-neutra-escura);
+    color: var(--cor-neutra-clara);
+    padding: var(--espaco-3x) 0;
+    text-align: center;
+    margin-top: var(--espaco-6x); /* Afasta o conteúdo do rodapé */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
