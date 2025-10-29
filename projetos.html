@@ -1,41 +1,62 @@
-# 🌟 ONG Cidadã: Projeto de Desenvolvimento Front-End (Entrega Final)
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | ONG Cidadã - Transformando Vidas</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    
+    <link rel="stylesheet" href="css/acessibilidade.css" media="(prefers-color-scheme: dark), (forced-colors: active)"> 
+    
+</head>
+<body>
 
-## 📄 Descrição do Projeto
-Este repositório contém o desenvolvimento Front-End de um website institucional para uma ONG de ação social. O projeto consolida todas as práticas aprendidas nas Etapas 1, 2, 3 e 4, focando em Design System, JavaScript Modular, Acessibilidade e Versionamento Profissional.
+<header>
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" alt="Logo da ONG Cidadã" class="logo">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Nossos Projetos</a></li>
+                <li><a href="cadastro.html" class="btn btn-secondary">Quero Participar!</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-## 🚀 Requisitos e Implementações Técnicas
+<main>
+    <div class="container">
+        <h1>Nossas Áreas de Impacto Social</h1>
 
-### 1. Estrutura e Design (Etapas 1 e 2)
-* **HTML Semântico:** Uso correto de tags como `<header>`, `<main>`, `<nav>`, `<footer>`.
-* **CSS Modular (Design System):** O estilo é organizado em pastas (`base/`, `components/`, `layout/`) e arquivos específicos para manutenção e escalabilidade.
-* **Responsividade:** O layout é adaptável a diferentes tamanhos de tela.
+        <section class="lista-projetos"> 
+            <h2 class="col-12">Projetos Atuais</h2>
+            
+            <div class="row" id="lista-projetos"> 
+                </div>
+            
+        </section>
+        <section class="voluntariado">
+            <h2>Seja um Voluntário</h2>
+            <p>Participe dos nossos projetos e ajude a transformar vidas.</p>
+            <a href="cadastro.html" class="btn btn-secondary">Cadastre-se aqui</a>
+        </section>
+        
+        <section class="como-doar">
+            <h2>Apoie Nossa Causa: Como Doar</h2>
+            <p>Sua doação é o motor que mantém nossos projetos vivos.</p>
+            <a href="#" class="btn btn-primary">Quero Doar Agora!</a>
+        </section>
+    </div>
+</main>
 
-### 2. Interatividade e Lógica (Etapa 3)
-* **Validação de Formulário em JS:** O formulário de cadastro é validado com JavaScript (`js/cadastro.js`), utilizando validações customizadas.
-* **Templates JavaScript (Manipulação do DOM):** Os cards de projetos em `projetos.html` são gerados dinamicamente com um template em JS (`js/projetos.js`).
+<footer>
+    <div class="container">
+        <p>&copy; 2025 ONG Cidadã. Todos os direitos reservados. Projeto Acadêmico ADS.</p>
+    </div>
+</footer>
 
-### 3. Qualidade e Entrega Profissional (Etapa 4) - CONCLUÍDA
+<script src="js/data.js" defer></script> 
+<script src="js/projetos.js" defer></script> 
 
-Esta seção detalha o cumprimento dos requisitos obrigatórios da **Etapa 4**:
-
-* **Acessibilidade (WCAG 2.1 AA):**
-    * **Navegação por Teclado:** Implementação de `outline:focus` no CSS para garantir o foco visual claro em links, botões e campos de formulário.
-    * **Preparação para Tema:** O link para o arquivo `css/acessibilidade.css` foi adicionado em todos os HTMLs com a regra `media="(prefers-color-scheme: dark), (forced-colors: active)"`, cumprindo a preparação para modo escuro e alto contraste.
-* **Controle de Versão (Git/GitHub):**
-    * O histórico de *commits* foi mantido de forma semântica e organizada.
-    * O sistema de *releases* foi implementado e a entrega final está marcada com a **Release `v1.0.0`**.
-
----
-
-## 🔗 Link do Site em Produção (Deploy Final)
-
-Acesse a versão final do projeto neste link público:
-
-**[COLE AQUI O LINK DO SEU GITHUB PAGES OU AMBIENTE DE DEPLOY]**
-
----
-
-## 🖥️ Como Visualizar o Projeto
-
-1.  Acesse o link público do repositório no seu navegador.
-2.  Para ver o site localmente, faça o download dos arquivos e abra o `index.html`.
+</body>
+</html>
