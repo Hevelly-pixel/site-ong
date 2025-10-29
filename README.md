@@ -1,0 +1,41 @@
+# 🌟 ONG Cidadã: Projeto de Desenvolvimento Front-End 
+
+## 📄 Descrição do Projeto
+Este repositório contém o desenvolvimento Front-End de um website institucional para uma ONG de ação social. O projeto consolida todas as práticas aprendidas nas Etapas 1, 2, 3 e 4, focando em Design System, JavaScript Modular, Acessibilidade e Versionamento Profissional.
+
+## 🚀 Requisitos e Implementações Técnicas
+
+### 1. Estrutura e Design (Etapas 1 e 2)
+* **HTML Semântico:** Uso correto de tags como `<header>`, `<main>`, `<nav>`, `<footer>`.
+* **CSS Modular (Design System):** O estilo é organizado em pastas (`base/`, `components/`, `layout/`) e arquivos específicos para manutenção e escalabilidade.
+* **Responsividade:** O layout é adaptável a diferentes tamanhos de tela.
+
+### 2. Interatividade e Lógica (Etapa 3)
+* **Validação de Formulário em JS:** O formulário de cadastro é validado com JavaScript (`js/cadastro.js`), utilizando validações customizadas.
+* **Templates JavaScript (Manipulação do DOM):** Os cards de projetos em `projetos.html` são gerados dinamicamente com um template em JS (`js/projetos.js`).
+
+### 3. Qualidade e Entrega Profissional (Etapa 4) - CONCLUÍDA
+
+Esta seção detalha o cumprimento dos requisitos obrigatórios da **Etapa 4**:
+
+* **Acessibilidade (WCAG 2.1 AA):**
+    * **Navegação por Teclado:** Implementação de `outline:focus` no CSS para garantir o foco visual claro em links, botões e campos de formulário.
+    * **Preparação para Tema:** O link para o arquivo `css/acessibilidade.css` foi adicionado em todos os HTMLs com a regra `media="(prefers-color-scheme: dark), (forced-colors: active)"`, cumprindo a preparação para modo escuro e alto contraste.
+* **Controle de Versão (Git/GitHub):**
+    * O histórico de *commits* foi mantido de forma semântica e organizada.
+    * O sistema de *releases* foi implementado e a entrega final está marcada com a **Release `v1.0.0`**.
+
+---
+
+## 🔗 Link do Site em Produção (Deploy Final)
+
+Acesse a versão final do projeto neste link público:
+
+**[file:///C:/Users/hevel/OneDrive/Documentos/%C3%81rea%20de%20Trabalho/Front-End/index.html]**
+
+---
+
+## 🖥️ Como Visualizar o Projeto
+
+1.  Acesse o link público do repositório no seu navegador.
+2.  Para ver o site localmente, faça o download dos arquivos e abra o `index.html`.
